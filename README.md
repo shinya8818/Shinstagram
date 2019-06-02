@@ -7,9 +7,9 @@
 |password_confirmation|string|null :false|
 
 ### Association
-has_many :comments
-has_many :posts
-has_many :likes
+has_many :comments  
+has_many :posts  
+has_many :likes  
 
 ## commentsテーブル
 |Column|Type|Options|
@@ -19,8 +19,8 @@ has_many :likes
 |user_id|references|foreign_key: true|
 
 ### Association
-belongs_to :user
-belongs_to :posts
+belongs_to :user  
+belongs_to :posts  
 
 ## postsテーブル
 |Column|Type|Options|
@@ -29,7 +29,7 @@ belongs_to :posts
 |user_id|references|foreign_key: true|
 
 ### Association
-belongs_to :user
+belongs_to :user  
 
 ## likesテーブル
 |Column|Type|Options|
@@ -38,8 +38,8 @@ belongs_to :user
 |user_id|references|foreign_key: true|
 
 ### Association
-belongs_to :user
-belongs_to :posts
+belongs_to :user  
+belongs_to :posts  
 
 ## photosテーブル
 |Column|Type|Options|
@@ -48,4 +48,4 @@ belongs_to :posts
 |post_id|references|foreign_key: true|
 
 ### Association
-belongs_to :posts
+belongs_to :posts  
